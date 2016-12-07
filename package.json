@@ -1,0 +1,40 @@
+{
+  "name": "redo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "DEBUG=\"flow-api:*\" node build/index.js",
+    "test": "jest"
+  },
+  "jest": {
+    "transform": {
+      ".*": "<rootDir>/node_modules/babel-jest"
+    }
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "debug": "^2.3.3",
+    "eslint-codeframe-formatter": "^1.0.2",
+    "express": "^4.14.0",
+    "gh-pages": "^0.12.0",
+    "gulp-eslint": "^3.0.1",
+    "morgan": "^1.7.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "babel-plugin-transform-flow-strip-types": "^6.18.0",
+    "babel-polyfill": "^6.16.0",
+    "babel-preset-latest": "^6.16.0",
+    "eslint": "^3.11.1",
+    "eslint-plugin-flowtype": "^2.29.1",
+    "flow-bin": "^0.36.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-flowtype": "^1.0.0",
+    "gulp-sourcemaps": "^1.9.1",
+    "jest": "^17.0.3",
+    "supertest": "^2.0.1",
+    "supertest-as-promised": "^4.0.2"
+  }
+}
